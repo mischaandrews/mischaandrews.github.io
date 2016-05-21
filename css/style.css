@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+
+/****** Sticky footer. From https://css-tricks.com/snippets/css/sticky-footer/ ******/
+
+* {
+	margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -5px; 
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 5px; 
+}
+.site-footer {
+	border-bottom: 0.3em solid #33f6bd;
+}
+
+/************************************ FONTS ************************************/
+* {
+	font-family: 'Rubik', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+
+/************************************ GENERAL ************************************/
+
+body {
+	background-color: #e8df8f;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat;	
+	color: #010101;
+	border-top: 0.3em solid #33f6bd;
+}
+
+a {
+	color: #0e695e;
+	text-decoration: underline;	
+}
+
+a:hover, a:focus {
+	color: #5f605c !important;
+}
+
+p {
+	margin-bottom: 0.4em;
+	font-size: 1em;
+}
+
+p.larger {
+	font-size: 1.3em;	
+}
+
+ul {
+	font-size: 0.95em;	
+}
+
+/*
+a:visited {
+	color: #690e3f;
+}
+*/
+
+/************************************ HEADINGS ************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.1em;
+}
+
+h2 {
+	margin-top: 2.5em;
+	margin-bottom: 0.8em;	
+}
+
+
+/************************************ LAYOUT BLOCKS ************************************/
+
+.section {
+	width: 80%;
+	max-width: 23em;
+	margin: 1.5em auto;
+}
+
+
+/************************************ HOME PAGE ************************************/
+.home h2 {
+	clear: both;	
+	font-size: 1.1em;
+}
+.home {
+	padding-top: 2em;
+}
+#personal-intro {
+	max-width: 32em;
+	margin-bottom: 4em;
+	padding-right: 1em;
+}
+#personal-intro p {
+	font-size: 0.9em;	
+}
+#personal-intro img {
+	float: left;
+	width: 7em;
+	margin-top: 0.2em;
+	margin-bottom: 1em;
+}
+#freelance-status {
+	position: absolute;
+	top: 0.3em;
+	right: 5em;	
+	width: 10em;
+	text-align: center;
+	font-size: 0.9em;
+	background-image: url(../images/fl-status.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 0.8em 0.5em 1.1em;
+	cursor: default;
+}
+#freelance-status strong {
+	font-size: 1.1em;
+	display: block;
+}
+#personal-intro .right-section {
+	margin-left: 9em;	
+}
+
+#find-me ul {
+	padding: 0px;	
+}
+#find-me ul li {
+	list-style-type: none;
+}
+#find-me ul li a, #old-stuff ul li a {
+	display: inline-block;
+	font-size: 1em;
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0.5em 0;
+}
+#find-me ul li a {
+	padding-left: 2em;
+	line-height: 1.2em;
+}
+#old-stuff ul {
+	padding-left: 1em;
+	line-height: 1em;
+}
+.icon-tw {
+	background-image:url(../images/icons/tw.png);	
+}
+.icon-gr {
+	background-image: url(../images/icons/gr.png);	
+}
+.icon-pi {
+	background-image: url(../images/icons/pi.png);	
+}
+.icon-du {
+	background-image: url(../images/icons/du.png);	
+}
+.icon-ig {
+	background-image: url(../images/icons/ig.png);	
+}
+.icon-fb {
+	background-image: url(../images/icons/fb.png);	
+}
+.icon-li {
+	background-image: url(../images/icons/li.png);	
+}
+.icon-ca {
+	background-image: url(../images/icons/ca.png);	
+}
+
+
+
+
+
+
+
+
+/************************************ RESPONSIVE ************************************/
+
+
+
+@media (max-width: 700px) {	
+	.home {
+		padding-top: 0px;	
+	}
+	#freelance-status {
+		position: inherit;
+		background: none;	
+		width: 100%;
+		text-align: left;
+		margin: 0 auto;
+		margin-top: 2em;
+		padding: 0px;
+	}
+	#freelance-status strong {
+		display: inline;
+	}
+	#personal-intro img {
+		float: none;	
+		margin: 0 auto 1em;
+		display: block;
+	}
+	#personal-intro .right-section {
+		margin-left: 0px;
+	}
+	#personal-intro {
+		padding-right: 0px;	
+		margin-bottom: 0px;
+	}
+	.section, #personal-intro {
+		max-width: none;	
+	}
+}
+
+
+@media (max-width: 400px) {
+	.section, #personal-intro {
+		width: 90%;
+	}	
+}
