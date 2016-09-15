@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+
+/****** Sticky footer. From https://css-tricks.com/snippets/css/sticky-footer/ ******/
+
+* {
+	margin: 0;
+}
+html, body {
+  height: 100%;
+  font-size: 1.05em;
+}
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -5px; 
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 0; 
+}
+
+/************************************ FONTS ************************************/
+* {
+	font-family: "sofia-pro", 'Rubik', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+
+/************************************ GENERAL ************************************/
+
+body {
+	background-color: #ffe66a;
+	color: #010101;
+}
+
+a {
+	color: #0e695e;
+	text-decoration: underline;	
+	transition: 0.1s;
+}
+
+a:hover, a:focus {
+	color: #b41831 !important;
+	border-color: #b41831;
+}
+
+p {
+	margin-bottom: 0.4em;
+	font-size: 1em;
+}
+
+
+ul {
+	font-size: 0.95em;	
+}
+
+/*
+a:visited {
+	color: #690e3f;
+}
+*/
+
+/************************************ HEADINGS ************************************/
+
+h1 {
+	margin-bottom: 0.2em;
+	line-height: 1.1em;
+}
+
+h2, h3, h4, h5, h6 {
+	margin-bottom: 0.1em;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 0.8em;	
+}
+
+
+/************************************ LAYOUT BLOCKS ************************************/
+
+.section {
+	width: 80%;
+	max-width: 27em;
+	margin: 1.5em auto;
+	position: relative;
+	padding-left: 4em;
+}
+
+.section-wrap {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+	padding: 3em 0 1.5em;
+}
+
+.section-wrap:last-child {
+	padding-bottom: 6em;	
+}
+
+.showcase-wrap {
+	background-color: #282827;
+	color: #fff;
+	padding: 1em 0 0;
+}
+
+.section h2 {
+	position: absolute;
+	left: -5.5em;
+	width: 6em;
+	text-align: right;	
+	font-size: 2em;
+	margin: -0.3em 0 0 0;
+	padding: 0;
+}
+
+.section h3 {
+	font-size: 1.1em;
+	margin: 1.3em 0 0.2em;
+	padding: 0;	
+}
+
+.section p {
+	font-weight: 300;
+	font-size: 0.9em;	
+	line-height: 1.3em;
+	position: relative;
+}
+
+.section p.larger {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: 300;
+}
+
+.section p a {
+	font-weight: 400;	
+}
+
+
+/************************************ SHOWCASE ************************************/
+
+.showcase {
+	overflow: scroll;
+	overflow-y: hidden;	
+	height: 18.2em;
+	position: relative;
+	white-space: nowrap;
+}
+
+.showcase li {
+	display: inline-block;
+	list-style-type: none;	
+	
+}
+
+.showcase a.cta {
+	color: #ffee86;
+	font-weight: 300;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.2em 2em 0.2em 0.6em;
+	border: 0.1em solid #55503b;
+	background-image: url(../images/cta-arrow-right.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	position: absolute;
+	bottom: 1.5em;
+}
+
+.showcase a.cta:hover, .showcase a.cta:focus {
+	color: #8bcd18 !important;
+	border-color: #3a4c20;	
+	background-image: url(../images/cta-arrow-right-green.png);
+	margin-left: 0.1em;
+}
+
+.showcase ul ul li a {
+	position: relative;
+	bottom: auto;	
+}
+
+.showcase ul {
+	padding: 0 2em 0 0;	
+}
+
+.showcase ul ul {
+	padding: 0;	
+}
+
+.showcase img {
+	height: 13em;	
+	transition: all 0.1s;
+	display: inline;
+	position: relative;
+	top: 0;
+	margin-right: 0.5em;
+}
+
+.showcase a:hover img, .showcase a:focus img {
+    -webkit-filter: grayscale(60%); /* Chrome, Safari, Opera */
+    filter: grayscale(60%);
+}
+
+/************************************ SECTION STYLING ************************************/
+
+#portfolio-intro {
+	background-color: #ffe66a;
+	font-size: 1.2em;
+	margin-left: 4em;
+	font-weight: 400;
+	padding: 0.5em 0 1em 0;
+}
+
+#portfolio-intro p {
+	width: 85%;	
+}
+
+#portfolio-intro img {
+	position: absolute;
+	left: -3.5em;
+	width: 5em;	
+	margin-top: 1em;
+}
+
+#portfolio-intro a {
+	font-weight: 800;	
+	color: #202020;
+	border-bottom: 0.2em solid #8bcd18;
+	text-decoration: none;
+	border-collapse: collapse;
+	transition: all 0.1s;
+	position: relative;
+}
+
+#portfolio-intro a:hover, #portfolio-intro a:focus {
+	color: #b41831 !important;
+	border-color: #b41831;
+	top: 0.05em;
+}
+
+#build {
+	background-image:url(../images/background-build.jpg);	
+}
+
+#design {
+	background-image:url(../images/background-design.jpg);		
+}
+
+#test {
+	background-image:url(../images/background-test.jpg);		
+}
+
+#analyse {
+	background-image:url(../images/background-analyse.jpg);		
+}
+
+#influence {
+	background-image:url(../images/background-influence.jpg);		
+}
+
+#collaborate {
+	background-image:url(../images/background-collaborate.jpg);		
+}
+
+#learn {
+	background-image:url(../images/background-learn.jpg);		
+}
+
+/************************************ HOME PAGE ************************************/
+.home h2 {
+	clear: both;	
+	font-size: 1.6em;
+}
+.home {
+	padding-top: 2em;
+}
+#personal-intro {
+	max-width: 32em;
+	margin-bottom: 4em;
+	padding-right: 1em;
+}
+#personal-intro p {
+	font-size: 0.9em;	
+}
+
+p#hello {
+	font-size: 1.1em;	
+	margin-bottom: 0;
+	
+}
+
+p#career-title {
+	font-size: 1.3em;
+	font-weight: 400;	
+	padding-bottom: 0.5em;
+}
+
+#personal-intro img {
+	float: left;
+	width: 7em;
+	margin-top: 0.2em;
+	margin-bottom: 1em;
+}
+#freelance-status {
+	position: absolute;
+	top: 0.3em;
+	right: 5em;	
+	width: 10em;
+	text-align: center;
+	font-size: 0.9em;
+	background-image: url(../images/fl-status.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 0.8em 0.5em 1.1em;
+	cursor: default;
+}
+#freelance-status strong {
+	font-size: 1.1em;
+	display: block;
+}
+#personal-intro .right-section {
+	margin-left: 9em;	
+}
+
+
+/* Articles */
+
+#articles ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#articles li {
+	margin-bottom: 1.5em;	
+}
+
+#articles p {
+	font-size: 0.85em;
+	line-height: 1.3em;
+	font-weight: 400;
+	margin-top: 0.3em;
+}
+
+#articles time {
+	font-weight: 600;	
+}
+
+
+/* Find me */
+
+#find-me ul {
+	padding: 0;	
+}
+#find-me ul li {
+	list-style-type: none;
+}
+#find-me ul li a, #old-stuff ul li a {
+	display: inline-block;
+	font-size: 1em;
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0.5em 0;
+}
+#find-me ul li a {
+	padding-left: 2em;
+	line-height: 1.2em;
+}
+
+.icon-tw {
+	background-image:url(../images/icons/tw.png);	
+}
+.icon-me {
+	background-image:url(../images/icons/me.png);	
+}
+.icon-gh {
+	background-image:url(../images/icons/gh.png);	
+}
+.icon-gr {
+	background-image: url(../images/icons/gr.png);	
+}
+.icon-pi {
+	background-image: url(../images/icons/pi.png);	
+}
+.icon-du {
+	background-image: url(../images/icons/du.png);	
+}
+.icon-ig {
+	background-image: url(../images/icons/ig.png);	
+}
+.icon-fb {
+	background-image: url(../images/icons/fb.png);	
+}
+.icon-li {
+	background-image: url(../images/icons/li.png);	
+}
+.icon-ca {
+	background-image: url(../images/icons/ca.png);	
+}
+
+
+
+
+
+/************************************ RESPONSIVE ************************************/
+
+
+
+@media (max-width: 60em) {	
+	.section h2 {
+		position: relative;	
+		left: 0;
+		text-align: left;
+		margin: 0 0 0.5em 0;
+	}
+	
+	.section {
+		padding-left: 0;	
+	}
+	
+	.section-wrap {
+		padding-top: 1.5em;	
+	}
+	
+	#portfolio-intro img {
+		position: relative;
+		left: auto;
+		margin: 0 auto;	
+	}
+	
+	#portfolio-intro {
+		margin-left: auto;
+		text-align: center;
+	}
+	
+	#portfolio-intro p {
+		width: 100%;	
+	}
+}
+
+
+@media (max-width: 400px) {
+
+}
