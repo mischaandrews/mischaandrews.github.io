@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+
+html, body {
+  height: 100%;
+  font-size: 1em;
+}
+
+/************************************ FONTS ************************************/
+* {
+	font-family: "sofia-pro", 'Rubik', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+
+/************************************ GENERAL ************************************/
+
+body {
+	background-color: #ffe66a;
+	color: #010101;
+}
+
+a {
+	color: #0e695e;
+	text-decoration: underline;	
+	transition: 0.1s;
+}
+
+a:hover, a:focus {
+	color: #b41831 !important;
+	border-color: #b41831;
+}
+
+p {
+	margin-bottom: 0.4em;
+	font-size: 1em;
+}
+
+p.large {
+	font-size: 1.6em;	
+}
+
+ul {
+	font-size: 0.95em;	
+}
+
+/************************************ NAVIGATION ************************************/
+
+nav {
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+nav a {
+	width: 31%;
+	margin-right: 2%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	font-size: 1.2em;
+	background-color: #0e695e;
+	color: white;
+	font-weight: 500;
+	border-bottom: 0.5em solid #0e695e;
+	transition: all 0.2s;
+}
+
+nav a.current {
+	border-color: black;
+}
+
+nav a:last-child {
+	margin-right: 0;
+}
+
+nav a:hover, nav a:focus {
+	color: white !important;
+	background-color: #b41831;	
+}
+
+/************************************ HEADINGS ************************************/
+
+h1 {
+	margin-bottom: 0.2em;
+	line-height: 1.1em;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 0.8em;	
+}
+
+
+
+/************************************ LAYOUT ************************************/
+
+.container {
+	width: 90%;
+	max-width: 40em;
+	margin: 0 auto;	
+	padding: 3em 0;
+}
+
+/************************************ RESPONSIVE ************************************/
+
+
+
+@media (max-width: 30em) {	
+	nav a {
+		width: 100%;
+		margin-bottom: 0.5em;	
+		display: block;
+	}
+}
