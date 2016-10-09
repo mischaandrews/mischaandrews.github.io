@@ -1,0 +1,25 @@
+// PLACEHOLDERS
+
+// Primary (outer) containers
+%primary_container {
+    max-width: $max_page_width; 
+    @extend %centre_element;
+    padding: 0 $size_s;
+}
+
+%clear_block {
+	content: "";
+	display: block;
+    clear: both;
+}	
+
+%centre_element {
+	margin: 0 auto;
+    display: block;
+}
+
+%border_box {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box;
+}

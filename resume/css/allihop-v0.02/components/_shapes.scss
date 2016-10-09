@@ -1,0 +1,25 @@
+// Little coloured shapes. Unsure whether to include in the final version.
+
+@mixin fill($color) {
+    background-color: #{$color};
+}
+
+@mixin circle($size) {
+    height: $size;
+    width: $size;
+    border-radius: 100%;
+    display: inline-block;
+    border: $size_smallest solid fade-out($color_subtle_light, 0.5); // todo: this shouldn't be here
+}
+
+@each $label, $value in $standard_size_map {    
+    .circle-#{$label} {
+        @include circle($value);
+    }
+}
+
+@each $label, $value in $color_map {    
+    .fill-#{$label} {
+        @include fill($value);
+    }
+}

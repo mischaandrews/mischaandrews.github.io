@@ -1,0 +1,85 @@
+// Definition lists and 'on this page'
+
+// Todo: rename this section / put it into other sections
+
+$border_color: fade-out($color_lightest, 0.5);
+
+dl, .on-this-page {
+    font-size: 1rem;    
+    margin: $size_s 0;
+    overflow: hidden;
+    background-color: $color_accent_dark;
+    padding: $size_s $size_m;
+}
+
+.on-this-page h3 {
+    font-size: 0.85rem;
+    @extend %body_strong;
+    text-transform: uppercase;
+    border-bottom: $size_smallest solid $border-color;
+    margin-bottom: 1.5em;
+    padding: 0;
+}
+
+.on-this-page ul {
+    padding: 0;   
+    ul {
+        margin-top: $size_xs;   
+    }
+}
+
+
+
+dt, .on-this-page li {
+    @extend %body_strong;
+    width: auto;
+    display: block;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-top: $size_s;   
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+}
+
+dd, .on-this-page li li {
+    @extend %body_normal;
+    display: block;
+    border-radius: 0 $size_s $size_s 0;
+    padding: $size_xxs 0 0 $size_m;
+    margin: 0;
+    font-size: 0.9rem;
+    position: relative;
+    line-height: 1.1rem;
+}
+
+
+dd {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: $size_xxs;
+        height: $size_smallest;
+        background-color: fade-out($color_lightest, 0.3);
+        position: absolute;
+        margin-top: 0.6em;
+        margin-left: -0.75em;
+    }
+}
+
+.on-this-page li li {
+    border-left: $size_smallest dotted $border_color;
+    overflow: hidden;
+    &:before {
+        display: block;
+        position: relative;
+        top: 0.7em;
+        left: -($size_m + $size_xs);
+        width: $size_m;
+        height: $size_smallest;
+        border-top: $size_smallest dotted $border_color;
+        content: '';
+    }   
+}

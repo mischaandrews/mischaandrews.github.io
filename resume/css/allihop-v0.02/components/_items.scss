@@ -1,0 +1,46 @@
+// ITEMS (e.g. thumbnails)
+
+$testing: true;
+$item_margin: 0.015;
+
+$item_size_map: (xxl: 1, xl: 2, l: 3, m: 4, s: 5, xs: 6, xxs: 7);
+
+// todo: default size and item type
+// todo: allow items to not just be ols and uls. test with checkboxes, radio buttons, etc.
+// todo: encourage customisations, e.g. video thumbs, infographic thumbs, etc.
+
+%items {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        // Properties that apply to ALL items, regardless of num-across
+        float: left;
+        background-color: $color_accent_light;
+        color: $color_darkest;
+        margin: 0 0 percentage($item_margin) 0;
+        padding: $size_xxs $size_xs;        
+        @extend %border_box;
+        margin-right: percentage($item_margin);
+    }
+    &:after {
+        @extend %clear_block;
+    }   
+}
+
+@each $size, $num_across in $item_size_map {
+    ul.items-#{$size} {
+        @extend %items;  
+        li {
+            // Set the item width
+            width: percentage(( 1 / $num_across ) - (( $num_across - 1) * $item_margin ) / $num_across );
+            // Remove the margin from the rightmost items
+            &:nth-child(#{$num_across + n}) {
+                margin-right: 0 !important;  
+            }
+            // Clearfix on all leftmost items
+            &:nth-child(#{$num_across + n} + 1) {
+                clear: both;  
+            }
+        }
+    }
+}

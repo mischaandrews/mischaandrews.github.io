@@ -1,0 +1,74 @@
+// BUTTONS
+
+// Form buttons
+
+%cta {
+    font-size: 1em;
+    padding: $size_xs $size_s;
+    border: 0;
+    border-radius: 0.5em;
+    display: inline-block;
+    border: $size_smallest outset;
+    transition: all $time_s;
+    background-color: $color_subtle_dark;
+    color: $color_lightest;
+    border-color: $color_subtle_dark;
+    margin-right: $size_xs;
+    text-decoration: none;
+    &:hover, &:focus {
+        transform: scale(1.05);
+        z-index: $z_top;
+        cursor: pointer;
+    }
+    &:active {
+        transition-duration: 0.02s;
+        border-style: inset;
+        transform: scale(1.02);
+    }
+}
+
+%cta_interact {
+    background-color: $color_accent_mid;
+    color: $color_lightest;
+    border-color: $color_lightest;
+    border-style: outset;
+}
+
+input[type="submit"] {
+    @extend %cta;   
+    &:hover, &:focus {
+        @extend %cta_interact;   
+    }
+}
+
+// Call to action buttons
+
+.cta-bold {
+    @extend %body_strong;
+    @extend %cta;
+    background-color: $color_accent_light;
+    color: $color_darkest;
+    border-color: $color_accent_light;
+    &:hover, &:focus {
+        @extend %cta_interact;
+    }
+}
+
+
+// Secondary action buttons
+
+.cta-subtle {
+    @extend %cta;
+    background-color: $color_accent_dark;
+    color: $color_lightest;
+    border-color: $color_lightest;
+    &:hover, &:focus {
+        @extend %cta_interact;
+    }
+}
+
+// Add and subtract buttons
+
+// Download buttons
+
+// Custom icon buttons

@@ -1,0 +1,14 @@
+// FOOTER
+
+#primary-footer {
+	border-bottom: $small_border solid $color_accent_dark;
+	min-height: $footer_height;
+    width: 100%;
+    background-color: $color_subtle_dark;
+    color: $color_subtle_light;
+    padding: $size_s 0;
+    .container > * {
+        font-size: 0.9em;   
+    }
+}
+
