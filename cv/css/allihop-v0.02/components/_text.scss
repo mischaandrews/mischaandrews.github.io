@@ -1,0 +1,100 @@
+// TEXT
+
+// Headings
+
+// todo: have a function or sth to adjust font sizes based on a multiplier that can change in the theme (will depend on which font is being used)
+
+
+h1, h3, h5 {
+	@extend %heading_strong;
+    padding-top: $size_s;
+    padding-bottom: $size_xs;
+    clear: both;
+}
+
+h2, h4, h6 {
+    @extend %heading_normal;  
+    padding-top: $size_s;
+    padding-bottom: $size_xs;
+    clear: both;
+}
+
+h1 {
+	font-size: 3.5em;
+    line-height: 0.95em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;	
+}
+
+h4 {
+	font-size: 1.7em;	
+}
+
+h5 {
+	font-size: 1.2em;	
+}
+
+h6 {
+    font-size: 1em;   
+}
+
+
+// Common body elements
+
+p {
+	font-size: 1.1em;
+    @extend %body_normal;
+    strong {
+        @extend %body_strong;   
+    }
+    .large {
+        font-size: 1.3em;   
+    }
+}
+
+ul, ol, button, p {
+    margin-bottom: $size_xs;
+}
+
+
+// Links
+
+a {
+    @extend %body_strong;
+    position: relative;
+    color: $color_accent_light;
+    transition: all $time_xs;
+    &:hover, &:focus {
+        color: $color_lightest;   
+    }
+}
+
+p a, main li a, main dl a {
+    text-decoration: underline;
+    display: inline-block;
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: $size_smallest;
+        height: $size_smallest;
+        background-color: $color_accent_light;
+        z-index: -1;
+        transition: all $time_xs;
+    }
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $color_accent_light;
+        background-color: $color_subtle_dark;
+        &:after {
+            opacity: 0;
+        }
+    }
+}

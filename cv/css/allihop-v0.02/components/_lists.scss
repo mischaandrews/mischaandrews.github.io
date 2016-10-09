@@ -1,0 +1,49 @@
+// Various kinds of lists (UL, OL) for the body of your content
+
+// Ordered list with big numbers
+ol.big-numbers {
+    counter-reset: big-numbers;
+    padding-left: $size_s;
+    li {
+        list-style-type: none;
+        font-size: 1.3em;
+        position: relative;
+        &:before {
+            content: counter(big-numbers);
+            counter-increment: big-numbers;
+            margin-right: $size_s;
+            display: inline-block;
+            border-radius: 100%;
+            background-color: $color_accent_light;
+            color: $color_darkest;
+            @extend %body_strong;
+            width: 1.8em;
+            height: 1.8em;
+            text-align: center;
+            line-height: 1.8em;
+            font-size: 0.8em;
+            z-index: $z_s;
+            position: relative;
+        }
+        &:after {
+            height: $size_smallest;
+            position: absolute;
+            width: $size_m;
+            background-color: $color_accent_light;
+            display: block;
+            content: '';
+            z-index: $z_xs;
+            top: 0.6em;
+            left: 0.25em;
+        }
+        margin-bottom: $size_xs;
+    }
+}
+
+
+ul, ol {
+    padding-left: 2em;
+    li {
+        margin-bottom: $size_xxs;   
+    }
+}

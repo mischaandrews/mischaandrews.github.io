@@ -1,0 +1,20 @@
+// Actual data tables (not layout tables)
+
+table {
+    border-collapse: collapse;
+    border: $size_xxs solid $color_subtle_dark;
+    background-color: $color_accent_dark;
+    color: $color_lightest;
+}
+
+table tr, table td, table th {
+    border: $size_smallest solid fade-out($color_subtle_light, 0.8);
+    padding: $size_xs $size_s;
+    text-align: left;
+}
+
+table th {
+    background-color: $color_subtle_dark;
+    color: $color_lightest;
+    @extend %body_strong;
+}  

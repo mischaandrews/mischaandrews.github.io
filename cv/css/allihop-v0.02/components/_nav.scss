@@ -1,0 +1,81 @@
+// Navigation styles
+
+%link-tabs {
+    padding: 0;
+    margin: 0 auto $size_m;
+    cursor: default;
+    li {
+        list-style-type: none;
+        padding: 0;
+        display: inline-block;
+        position: relative;
+        &.active a {
+            border-color: $color_accent_light;   
+        }
+        a {
+            @extend %body_normal;
+            padding: $size_s $size_xs $size_s $size_xs;
+            margin: 0 $size_xxs;
+            display: block;
+            background-color: transparent;
+            color: $color_primary_light;
+            border-bottom: $size_xxs solid $color_darkest;
+            &:hover, &:focus {
+                background-color: $color_accent_mid;
+                color: $color_lightest;
+                border-color: $color_accent_mid;
+            }
+        }
+    }
+}
+
+a#logo-text {
+    @extend %heading_strong;   
+    text-decoration: none;
+    float: left;
+    padding: $size_s;
+    line-height: 1.4em;
+    color: $color_primary_light;
+    &:hover, &:focus {
+        color: $color_accent_light;
+    }
+}
+
+// Horizontal tabs
+ul.nav-tabs {
+    @extend %link-tabs;
+    a {
+        text-decoration: none; 
+    }  
+    li {
+        margin-bottom: 0;   
+    }
+}
+
+// Tabs with drop-downs
+
+// Drop-down box
+
+// Pagination buttons
+
+// Breadcrumbs
+
+.breadcrumbs { // TODO: finish styling, make them links, automate
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-top: $size_s;
+    li {
+        display: inline-block; 
+        @extend %body_strong;
+        &:after {
+            content: '>';
+            margin-right: $size_xs;
+            padding-left: $size_xs;
+        }
+        &:last-of-type:after {
+            display: none;
+        }
+    }
+}
+
+// Vertical list
