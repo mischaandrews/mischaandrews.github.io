@@ -11,16 +11,17 @@ html, body {
   font-size: 1.05em;
 }
 .page-wrap {
-	min-height: 100%;
-	/* equal to footer height */
-	margin-bottom: -5px; 
+	/*min-height: 100%;
+	margin-bottom: -5px; */
 }
 .page-wrap:after {
+	/*
 	content: "";
 	display: block;
+	*/
 }
 .site-footer, .page-wrap:after {
-	height: 5px; 
+	/*height: 5px; */
 }
 .site-footer {
 	border-bottom: 0.3em solid #33f6bd;
