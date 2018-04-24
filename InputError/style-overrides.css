@@ -1,0 +1,14 @@
+.section-black {
+    background-color: #263238;
+    color: #fff;    
+}
+
+h1 {
+    font-family: "Arial", "sans serif";
+    font-weight: bold;
+    font-size: 3em;
+}
+
+canvas {
+    border: none !important;   
+}
