@@ -1,913 +1,245 @@
-@charset "utf-8";
+<!doctype html>
+<html lang="en">
 
-
-/*
-
-Colour palette:
-
-White:
-#fff
-
-Green:
-#6B9E1B
-
-Dark green: 
-#374422
-
-Beige:
-#F2F2DF
-
-Yellow:
-#F2F152
-
-Black:
-#32322C
-
-
-
-*/
-
-
-/************************************ TYPEFACES ************************************/
-
-* {
-	font-family: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;	
-    color: #32322C;
-    transition: all 0.15s;
-}
-
-h1, h2, h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 800;
-}
-
-h3 {
-    font-weight: 700;
-}
-
-/************************************ GENERAL ************************************/
-
-body {
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    position: relative;
-    font-size: 1.05rem;
-}
-
-section {
-	width: 80%;
-	max-width: 45em;
-	margin: 2em auto;
-    padding-bottom: 1em;
-}
-
-img {
-    max-width: 100%;
-}
-
-.inner-container {
-    padding: 1em 2em;
-}
-
-.inner-container h2 {
-    margin-top: 0;
-}
-
-.inner-container p:last-child {
-    margin-bottom: 0;
-}
-
-.clear {
-    clear: both;
-}
-
-
-
-/************************************ SECTION CUSTOMISATION ************************************/
-
-section.yellow {
-    background-color: #F2F152;
-
-}
-
-section.yellow .cta:hover, section.yellow .cta:focus {
-    background-color: #32322C !important;
-    color: #fff !important;
-}
-
-section.black {
-    background-color: #31302A;
+<head>
     
-    /*background: rgb(55,68,34);
-    background: linear-gradient(191deg, rgba(55,68,34,1) 20%, rgba(41,51,25,1) 90%);*/
-    padding-top: 1em;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vegger</title>
+
+    <!-- Libraries -->
+
+    <!-- Fonts -->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Literata&family=Plus+Jakarta+Sans" rel="stylesheet">-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
     
     
 
+    <div class="intro-container">
+        
+        
+        
+        <section>
+            
+            <a href="#" class="button language-picker sweden">Sweden / English</a>
+
+            <div class="background left"></div>
+            
+            
+
+            <header>
+
+
+                <img src="images/logo-green.svg" alt="Vegger" class="logo" />
+
+                <h1>Growing<br/>green spaces</h1>
+                <p class="intro">Transform any space with our vertical farms and indoor gardens for fresh air, a relaxing environment, and sustainable herbs and vegetables.</p>
+                <a href="mailto:info@vegger.nl" class="button cta big">Contact us</a>
+
+
+
+            </header>
+
+            <div class="background right"></div>
+
+        </section>
+    </div>
+
+
+    <div class="white-outer">
+    <section class="products">
+
+
+
+        <ul>
+            
+            
+            <li>
+                <div class="img-container"><img src="images/home-3.jpg" alt="Close-up of a small indoor garden."></div>
+                <h3>For homes</h3>
+                <p>Whether you're an architect, an interior designer, an individual or family, a Vegger garden is a perfect addition to any home.</p>
+            </li>
+
+            <li>
+                <div class="img-container"><img src="images/office-2.jpg" alt="An indoor vertical garden in an office space."></div>
+                <h3>For offices</h3>
+                <p>Indoor gardens create a pleasant environment, purify the air, and provide opportunities for office gatherings.</p>
+            </li>
+            
+            <li>
+                <div class="img-container"><img src="images/custom-2.jpg" alt="A restaurant worker climbing down a ladder on a vertical garden."></div>
+                <h3>For everyone</h3>
+                <p>Schools, hotels, restaurants, healthcare centres... there's a perfect green space for every place.</p>
+            </li>
+            
+        </ul>
+
+    </section>
+    </div>
+
+    <section class="plant-varieties beige">
+        
+        <div class="inner-container">
+
+            <h3>Over 30 plant varieties</h3>
+
+            
+            <ul id="plant-varieties">
+                <li><img src="images/plant1.jpg" alt="" /><span class="label">Parsley</span></li>
+                <li><img src="images/plant4.jpg" alt="" /><span class="label">Mint</span></li>
+                <li><img src="images/plant2.jpg" alt="" /><span class="label">Lettuce</span></li>
+                <li><img src="images/plant3.jpg" alt="" /><span class="label">Sage</span></li>
+                <li><img src="images/plants-many-3.jpg" alt="" /><span class="label">+27 more</span></li>
+            </ul>
+            
+        </div>
+
+    </section>
     
-}
+    <section class="benefits">
+        
+        <img class="decorative-left" src="images/plant6.jpg" alt="" />
 
-section.black p, section.black h2, section.black h3, section.black a {
-    color: #EAEADB;
+        <dl>
+            <img src="images/efficient.svg" alt="" />
+            <dt>Efficient</dt>
+            <dd>Produces 10 times more than traditional gardens, with less water and fertiliser.</dd>
+            
+            <img src="images/easy.svg" alt="" />
+            <dt>Easy to use</dt>
+            <dd>Low maintenance. Simple.</dd>
+            
+            <img src="images/safe.svg" alt="" />
+            <dt>Safe</dt>
+            <dd>High safety standards and pesticide-free.</dd>
+            
+            <img src="images/consistent.svg" alt="" />
+            <dt>Consistent</dt>
+            <dd>Local produce all year round, independent of climate conditions.</dd>
+            
+        </dl>
+
+    </section>
     
+    <section class="case-study black">
+        
+        <div class="inner-container">
+
+            <h2 class="pre-header">Case study</h2>
+            <h3>Arnhem's first vertical garden</h3>
+
+            <p>Hotel Hamhuis and its restaurant, LOCALS, now provide customers with ultra-fresh, ultra-local, healthy vegetables and herbs in the Netherlands.</p><p>Read the <a href="https://www.gelderlander.nl/arnhem/in-het-restaurant-van-haarhuis-draaien-ze-het-om-de-groente-staat-centraal-en-niet-het-vlees~a896e868/" target="_blank">full story</a> at De Gelderlander (in Dutch).</p>
+            
+            <img src="images/case-study-wide.jpg" alt="" />
+            
+            
+            
+            <p class="photo-credit">Photo: © LOCALS Arnhem</p>
+            
+        </div>
+
+    </section>
     
-}
+    <div class="contact-outer">
+        <section class="contact-inner yellow">
 
-section.beige {
-    background-color: #F2F2DF;
-}
+            <div class="inner-container">
 
+                <h2>Get started</h2>
 
-/************************************ TEXT ************************************/
+                <p>Contact us to get started with your own Vegger solution today.</p>
 
-h1 {
-    font-size: 3.4em;
-    line-height: 0.95em;
-    margin-bottom: 0.25em;
-    margin-top: 0;
-    padding-top: 1em;
-    font-weight: 800;
-}
+                <a href="mailto:info@vegger.nl" class="button cta big">Contact us</a>
 
-h2 {
-    font-size: 1.6em;
-    padding-bottom: 0em;
-    margin-bottom: 0;
-    font-weight: 700;
-}
+            </div>
 
-h3 {
-    font-size: 1.6em;
-    font-weight: 700;
-}
+        </section>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <footer>
+        
+    
+        <section> 
+            
+            <div class="identity inner-container">
 
-p {
-    margin-bottom: 1em;
-}
-
-
-
-.intro-container section h1 {
-    max-width: 28rem;
-}
-
-.intro-container section p {
-    font-size: 1em;
-    line-height: 1.5em;
-    max-width: 24rem;
-    margin: 2em 0 1em;
-}
-
-.intro-container section {
-    margin-top: 0;
-}
-
-/************************************ LINKS ************************************/
-
-a {
-	color: #6B9E1B;
-    display: inline;
-}
-
-a:hover, a:focus {
-    color: #6B9E1B;
-    text-decoration-style: double;
-    text-decoration-color: #F2F152;
-}
+                <img src="images/logo-white.svg" alt="Vegger" class="logo" />
+                <!--<p class="tagline">Growing green spaces</p>-->
+                <a href="#" class="button language-picker sweden">Sweden / English</a>
+                
+                
+                <p class="address">Wageningen Campus Atlas<br/>
+                Building Droevendaalsesteeg 4<br/>
+                D009 6708 PB, Wageningen<br/>
+                The Netherlands</p>
+                
 
 
-/************************************ ARTICLES ************************************/
+            </div>
 
+            
+            <div class="socials inner-container">
 
-.articles ul {
-    margin: 0;
-    padding: 0;
-}
+                <ul>
+                    <li><a href="mailto:info@vegger.nl"><img src="images/bi_envelope.svg" alt="Email" />info@vegger.nl</a></li>
+                    <li><a href="https://www.facebook.com/veggering/"><img src="images/bi_facebook.svg" alt="Facebook" />Facebook</a></li>
+                    <li><a href="https://www.instagram.com/vegger_official/"><img src="images/bi_instagram.svg" alt="Instagram" />Instagram</a></li>
+                    <li><a href="https://twitter.com/vegger_official"><img src="images/bi_twitter-x.svg" alt="X" />X (Twitter)</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdQHoiUhJ8QCGqr9KDIiwew"><img src="images/bi_youtube.svg" alt="YouTube" />YouTube</a></li>
+                </ul>
 
-.articles li {
-    list-style-type: none;
-    display: block;
-}
-
-.articles h3 {
-    margin: 2em auto 0;
-}
-
-.articles h3 a {
-    font-size: 1.3em;
-    font-weight: 500;
-}
-
-.articles .meta {
-    font-size: 0.9em;
-    margin-top: 0.5em;
-}
-
-.articles .thumbnail {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    background-color: #F2F2DF;
-}
-
-.articles .thumbnail .img-container {
-    opacity: 1;
-    margin: 0;
-    padding: 0;
-    display: block;    
-}
-
-.articles .thumbnail .img-container img {
-    float: left;
-}
-
-.articles .thumbnail:hover .img-container, .articles .thumbnail:focus .img-container {
-    opacity: 0.8;
-}
+            </div>
+            
+            
+            <!--<div class="contact-details inner-container">
+                Wageningen Campus Atlas<br/>
+                Building Droevendaalsesteeg 4<br/>
+                D009 6708 PB<br/>
+                Wageningen<br/>
+                The Netherlands
+            </div>-->
 
 
 
-@media screen and (min-width: 600px) {
+
+            
+            <div class="final-contact inner-container">
+
+                <!--<a href="mailto:info@vegger.nl" class="button cta big">Contact us</a>-->
+                
+                <p class="copyright">&copy; Vegger 2023</p>
+
+            </div>
+            
+            
+            
+            
+            
+            <div class="clear"></div>
+
+        </section>
+        
+        <section class="bottom-section">
+            
+           
+        </section>
+    
+    </footer>
+
   
-    
-}
-
-
-
-/************************************ LOGOS ************************************/
-
-.logo {
-    display: block;
-}
-
-.intro-container .logo {
-    max-width: 7em;
-}
-
-footer .logo {
-    max-width: 5em;
-    margin-bottom: 0;
-    opacity: 0.9;
-}
-
-
-/************************************ BUTTONS ************************************/
-
-.button {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    font-weight: 500;
-}
-
-.button.cta {    
-    background-color: #6B9E1B;
-    color: #fff;
-    border: 1px solid #6B9E1B;
-}
-
-
-a.cta:hover, a.cta:focus {
-    background-color: #F2F152;
-    color: #32322C;
-    border-color: #32322C;
-}
-
-.button.big {
-    font-size: 1.1rem;
-}
-
-.button.language-picker {
-    color: #32322C;
-    border: 0.08em solid #32322C;
-    position: relative;
-    padding-left: 2.9em;
-    background: transparent;
-}
-
-.language-picker:before {
-    content: "";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.5em;
-    margin-top: 0.1em;
-    margin-left: -1.5em;
-    position: absolute;
-}
-
-.language-picker.sweden:before {
-    background-image:url(../images/flag-se.svg);
-    background-position: center;
-    background-size: contain;
-}
-
-.intro-container .button.language-picker {
-    font-size: 0.7em;
-    position: absolute;
-    top: 2em;
-    right: 3em;
-    z-index: 1;
-    margin-right: 0;
-}
-
-footer .button.language-picker {
-    font-size: 0.7em;
-    background-color: #4C681F;
-    color: #fff;
-    border: none;
-    position: absolute;
-    top: 2em;
-    right: 0;
-}
-
-
-.language-picker:hover, .language-picker:focus {
-    background-color: #32322C !important;
-    color: #fff !important;
-    text-decoration: none !important;
-}
-
-
-/************************************ HEADER ************************************/
-
-.intro-container {
-    position: relative;
-    
-    background: rgb(255,255,255);
-    background: linear-gradient(191deg, rgba(255,255,255,1) 20%, rgba(242,242,223,1) 90%); 
-    
-    padding-bottom: 0.1em;
-    padding-top: 1em;
-    
-    
-    @media screen and (min-width: 700px) {
-        padding-bottom: 9em;
-        margin-bottom: -8em;
-        
-        /* Below clipping code thanks to: https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/ */
-        clip-path: polygon(
-            0 0,
-            100% 0,
-            100% 100%,
-            0 calc(100% - 14vw)
-          );
-
-    }
-    
-    
-    
-}
-
-.intro-container .background.left {
-    
-    position: absolute;
-    width: 4%;
-    left: 0;
-    right: auto;
-    top: -3em;
-    bottom: 0;
-    
-    background-image:url(../images/vertical-garden.jpg);
-    background-position: right;
-    background-size: cover;
-}
-
-.intro-container .background.right {
-    
-    position: absolute;
-    width: 35%;
-    left: auto;
-    right: 0;
-    top: -3em;
-    bottom: 0;
-    
-    background-image:url(../images/farm-banner.png);
-    background-position: bottom right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    @media screen and (min-width: 700px) {
-        width: 40%;
-    }
-}
-
-.intro-container .background.right {
-    
-}
-
-
-/************************************ SECTION: PRODUCTS ************************************/
-
-.white-outer {
-    background-color: #fff;
-    position: relative;
-}
-
-section.products {
-    padding-bottom: 0;
-    padding-top: 1em;
-}
-
-section.products ul {
-    padding: 0;
-    margin: 0;
-    display: block;
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
-}
-
-section.products ul:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-
-section.products li {
-    display: inline-block;
-    list-style-type: none;
-    width: 30%;
-    margin-right: 5%;
-    float: left;
-    margin-bottom: 2em;
-}
-
-section.products li:last-of-type {
-    margin-bottom: 0;
-}
-
-section.products li:last-of-type {
-    margin-right: 0 !important;
-}
-
-section.products h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.4em;
-}
-
-section.products p {
-    font-size: 0.9em;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-}
-
-section.products img {
-    width: 100%;
-    margin: 1em 0 0.5em;
-}
-
-
-/************************************ SECTION: PLANT VARIETIES ************************************/
-
-section.plant-varieties, .plant-varieties .inner-container {
-    padding-bottom: 0;
-}
-
-.plant-varieties h3 {
-    margin: 0.5em 0 1em 0;
-    font-size: 1.3em;
-}
-.plant-varieties p {
-    max-width: 26em;
-}
-
-ul#plant-varieties {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    margin-bottom: 1em;
-}
-
-ul#plant-varieties li {
-    display: inline-block;
-    margin-right: 2%;
-    text-align: center;
-    position: relative;
-    width: 17%;
-    margin-bottom: 3em;
-}
-
-ul#plant-varieties li:last-of-type {
-    margin-right: 0;
-}
-
-ul#plant-varieties li img {
-    width: 100%;
-    height: auto;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-
-ul#plant-varieties .label {
-    position: absolute;
-    z-index: 1;
-    overflow: visible;
-    bottom: -1.5em;
-    font-size: 0.8em;
-    left: 0;
-    right: 0;
-}
-
-
-
-/************************************ SECTION: CASE STUDY ************************************/
-
-
-
-.case-study p {
-    font-size: 0.9em;
-    line-height: 1.3em;
-}
-
-.case-study p.photo-credit {
-    font-size: 0.8em;
-    float: right;
-}
-
-.case-study p, .case-study .pre-header {
-}
-
-.case-study {
-    /*background-image: url(../images/case-study-dish-full.jpg);*/
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 12em;
-    padding-bottom: 2em;
-    clear: both;
-    
-}
-
-.case-study img {
-    width: 100%;
-    display: inline-block;
-}
-
-.case-study h2.pre-header {
-    font-family: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
-    font-size: 0.8em;
-    font-weight: normal;
-}
-
-.case-study h3 {
-    font-size: 1.6em; 
-    margin-top: 0.3em;
-    margin-bottom: 0;
-    font-weight: 700;
-}
-
-.case-study .inner-container {
-    padding-top: 0.5em;
-}
-
-/************************************ SECTION: BENEFITS ************************************/
-
-section.benefits {
-    padding-bottom: 0;
-    
-}
-
-
-.benefits img.decorative-left {
-    width: 30%;
-    display: inline-block;
-
-    
-}
-
-.benefits dl {
-    width: 65%;
-    display: inline-block;
-    float: right;
-    margin-top: 0;
-}
-
-.benefits dt, .benefits dd {
-    display: block;
-}
-
-.benefits dt {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 1.3em;
-}
-
-.benefits dd {
-    font-size: 0.9em;
-    margin-bottom: 1.5em;
-    line-height: 1.5em;
-}
-
-.benefits dl img {
-    float: left;
-    background-color: #F2F2DF;
-    border-radius: 100%;
-    clear: left;
-    width: 1.8em;
-    height: 1.8em;
-    padding: 0.4em;
-    margin-bottom: 2em;
-    margin-right: 1em;
-}
-
-/************************************ SECTION: CONTACT / GET STARTED ************************************/
-
-.contact-outer {
-    /* should match section */
-    width: 80%;
-	max-width: 45em;
-	margin: 0 auto;
-    padding: 0;
-
-    position: relative;
-}
-
-.contact-inner {
-    max-width: 27em;
-    float: right;
-    padding-top: 0;
-    margin: 0;
-    position: relative;
-}
-
-.contact-inner:before {
-    position: absolute;
-    width: 9em;
-    height: 100%;
-    content: "";
-    left: -9em;
-    background-image: url(../images/plant5.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/************************************ FOOTER ************************************/
-
-footer {
-    background-color: #374422;
-    margin: 0;
-    padding: 0em 0 1em;
-    background-image: url(../images/footer-bg.jpg);
-    background-position: bottom;
-    background-size: cover;
-}
-
-footer .inner-container {
-    display: inline-block;
-    padding-top: 2rem;
-    padding-left: 0;
-    padding-right: 0.5em;
-    float: left;
-    padding-bottom: 0;
-}
-
-footer section {
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-footer section.bottom-section {
-    margin-top: 1em;
-}
-
-
-
-footer p, footer a {
-    color: #fff;
-}
-
-footer a:hover, footer a:focus {
-    color: #F2F152 !important;
-    text-decoration: underline !important;
-}
-
-footer .identity {
-    width: 13em;
-}
-
-footer .identity .tagline {
-    font-size: 0.8em;
-    margin-top: 0.3em;
-}
-
-footer .copyright {
-    font-size: 0.8em;
-    opacity: 0.8;
-}
-
-footer .socials {
-    width: 9em;
-    opacity: 0.8;
-}
-
-footer .socials ul {
-    padding: 0;
-    margin: 0;
-    font-size: 0.8em;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-footer .socials ul li {
-    list-style-type: none;
-    margin-bottom: 0.3em;
-}
-
-footer .socials a {
-    text-decoration: none;
-}
-
-footer .socials a:hover, footer .socials a:focus {
-    opacity: 1;
-}
-
-footer .socials ul li:first-of-type {
-    margin-bottom: 1em;
-}
-
-footer .socials img {
-    width: 0.8em;
-    margin-right: 0.5em;
-}
-
-footer .contact-details {
-    width: 20em;
-    color: #ffffff;
-    font-size: 0.7em;
-    line-height: 1.5em;
-}
-
-footer .address {
-    font-size: 0.7em;
-    line-height: 1.5em;
-    color: #fff;
-    opacity: 0.8;
-}
-
-
-footer .final-contact {
-}
-
-footer .final-contact p {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-
-
-/************************************ RESPONSIVE FIXES ************************************/
-
-@media screen and (max-width: 600px) {
-    .background.left, .background.right {
-        display: none;
-    }
-    
-    
-    
-    .intro-container .button.language-picker {
-    }
-    
-    
-    
-    .contact-inner {
-        width: 100%;
-        max-width: none;
-        float: none;
-        padding-top: 0;
-        margin: 0;
-        position: relative;
-        margin-top: 0;
-    }
-    
-    .contact-inner:before {
-        display: none;
-    }
-    
-    ul#plant-varieties li {
-        display: inline-block;
-        margin-right: 4%;
-        text-align: center;
-        position: relative;
-        width: 28%;
-    }
-}
-
-
-
-@media screen and (max-width: 700px) {
-    
-    .benefits img.decorative-left {
-        display: none;
-    }
-    
-    .benefits dl {
-        width: 100%;
-        display: inline-block;
-        float: none;
-        margin-top: 0;
-        margin-bottom: -0.5em;
-    }
-    
-    .benefits dd:last-of-type {
-        margin-bottom: 0;
-    }
-
-    section.products {
-        padding-top: 0;
-    }
-    
-    section.products li {
-        width: 100%;        
-    }
-    
-    section.products li img {
-        width: 10em;
-        float: left;
-        padding-right: 1em; 
-        margin-top: 0.5em;
-        clear: both;
-        margin-bottom: 1em;
-    }    
-    
-    footer .button.language-picker {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-top: 2em;
-    }
-    
-}
-
-@media screen and (max-width: 500px) {
-    section.products li img {
-        width: 100%;
-    }
-    
-    .contact-outer {
-        width: 100%;
-        margin-bottom: -2em;
-    }
-    
-    section.case-study.black {
-        width: 100%;
-        margin-bottom: 0;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-    
-    .plant-varieties {
-        width: 100%;
-        
-    }
-    
-    section.case-study .photo-credit {
-        float: none;
-    }
-    
-    .contact-inner {
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-    
-
-    
-    .intro-container .button.language-picker {
-        float: none;
-    }
-    
-}
-
-@media screen and (max-width: 300px) {
-    ul#plant-varieties li {
-        margin-right: 0;
-        width: 100%;
-    }
-    
-    
-}
-
-
-@media screen and (min-width: 1700px) {
-    .background-right {
-        width: 30%;
-    }
-    
-    .background-left {
-        display: none;
-    }
-    
-    .intro-container {
-        clip-path: none;   
-    }
-    
-    
-    
-}
+</body>
+</html>
