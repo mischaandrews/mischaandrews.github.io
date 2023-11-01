@@ -895,9 +895,13 @@ footer .final-contact p {
 }
 
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
     .background-right {
         width: 30%;
+    }
+    
+    .background-left {
+        display: none;
     }
     
     .intro-container {
